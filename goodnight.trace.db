@@ -1,0 +1,6 @@
+2025-02-22 00:57:31.069744+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "QUOTE" not found (this database is empty); SQL statement:
+insert into quote (text,id) values (?,default) [42104-232]
+2025-02-22 00:59:21.099776+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "QUOTE" not found (this database is empty); SQL statement:
+insert into quote (text,id) values (?,default) [42104-232]
