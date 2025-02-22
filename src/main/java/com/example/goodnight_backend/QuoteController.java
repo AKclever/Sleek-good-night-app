@@ -17,17 +17,17 @@ import java.util.Random;
 public class QuoteController {
 
     @Autowired
-    private QuoteRepository QuoteRepository;
+    private QuoteRepository quoteRepository;
 
 
     @PostMapping
     public Quote addQuote(@RequestBody Quote quote) {
-        return QuoteRepository.save(quote);
+        return quoteRepository.save(quote);
     }
 
     @GetMapping("/random")
     public Quote getRandomQuote() {
-        List<Quote> quotes = QuoteRepository.findAll();
+        List<Quote> quotes = quoteRepository.findAll();
         
         if (quotes.isEmpty()) {
             return null;
